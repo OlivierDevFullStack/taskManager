@@ -1,0 +1,83 @@
+
+/*background color and pics*/
+body {
+    background-color: rgb(17, 75, 3);
+}
+header {
+    background-image: url("../../assets/pics/banner.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 1500px 300px;
+      }
+
+/*titles*/
+h1   {
+    text-align: center;
+    font-size: 3em;
+    color: firebrick;
+     }
+
+/*menu navbar*/
+navbar li {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+       }
+navbar ul ::after {
+       content: "";
+       display: table;
+       clear: both;
+                  }
+navbar ul {
+       list-style-type: none;
+         }
+navbar {
+        width: 100%;
+        margin: 0 auto;
+       }
+navbar a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        border-bottom: 2px solid transparent;
+        padding: 10px 0px;
+         }
+navbar a:hover {
+        color: olivedrab;
+        border-bottom 2px solid black;
+               }
+navbar button {
+        padding: 0;
+        margin: 0, 0, 0, 0;
+        width: 33.33%;
+        border: 33.33%;
+              }   
+            
+/* container*/               
+.flex-container {
+      display: flex;
+      flex-direction: row;
+      background-color: rgb(17, 75, 3);
+      width: 100%;
+      margin: 10px;
+     justify-content: space-around;
+      line-height: 75px;
+      font-size: 30px;
+     
+              }
+
+.flex-container > div {
+      background-color: #f1f1f1;
+      width: 45%;
+      margin: 10px;
+      text-align: left;
+      line-height: 75px;
+      font-size: 18px;
+      flex-flow: row wrap;
+              }
+             
+form {
+      background-color: #f1f1f1;
+      font-size: 18px;
+      width: 50% ;
+     }

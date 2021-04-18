@@ -5,20 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Noice Task Manager</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style1.css">
     <script src="assets/js.script.js"> </script>
 </head>
-<body>
-       <h1> My Noice Task Manager </h1> 
- 
+<body class="tasks">
+   <header>       
+      <br><br><br><br><br><br><br><br><br><br><br> <h1> My Noice Task Manager </h1> 
+   </header>
    <navbar>
         <ul>
-            <li><a href="index.html">Task</a></li>
-            <li><a href="schedulePage.html">Schedule</a></li>
-            <li><a href="overviewPage.html">Overview</a></li>
+            <li><button><a href="index.html">Task</a></button></li>
+            <li><button><a href="schedulePage.html">Schedule</a></button></li>
+            <li><button><a href="overviewPage.html">Overview</a></button></li>
         </ul>
     </navbar>
-
-
-</body>
-</html>
+   <br><br><br><br>
+<div class="flex-container">
+    <div style="order: 2">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
+            Dolorem, quis delectus? A dolor ad commodi, dolore praesentium <br>
+            sunt, tenetur animi unde doloremque beatae libero nesciunt <br>
+            natus harum perferendis, laboriosam repudiandae?</p>
+    </div>       
+        <form style="order: 1">
+            <label for="name">Name:</label>
+              <input type="text" id="name" name="name"><br>
+            <label for="description">Description:</label>
+              <input type="text" id="description" name="description"><br>
+              <label for="assignedTo">Assigned To:</label>
+              <input type="text" id="assignedTo" name="assignedTo"><br>
+            <label for="dueDate">Due date:</label>
+              <input type="text" name="dueDate" id="dueDate"><br>
+            <label for="add">Something to add? </label>
+              <textarea name="message" rows="2" cols="30"></textarea> <br>
+            <label for="status">Status:</label>
+              <select id="status" name="status"><br>
+                <option value="toDo">To Do</option>
+                <option value="inProgress">In Progress</option>
+                <option value="review">Review</option>
+                <option value="done">Done</option><br>  
+        </form>
+        
+        
+</div>
